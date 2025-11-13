@@ -4,7 +4,7 @@ import modakFont from './fonts/Modak/Modak-Regular.ttf';
 import BagelFont from './fonts/Bagel_Fat_One/BagelFatOne-Regular.ttf';
 import ComicFontBold from './fonts/Comic_Relief/ComicRelief-Bold.ttf';
 import Ephesis from './fonts/Ephesis/Ephesis-Regular.ttf';
-import cursor from '/src/assets/rosquinha.png';
+
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -39,11 +39,11 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
     font-family: 'Lexend';
     font-weight: 400;
+    cursor: url('/src/assets/rosquinha.png') 16 16, auto;
+    
   }
 
-  body {
-  cursor: url('/src/assets/rosquinha.png') 16 16, auto;
-  }
+  
 `
 
 export default GlobalStyle

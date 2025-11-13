@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const ContatosContainer = styled.div`
-background-color: white;
+  background-image: url('/src/assets/parede.png'); 
+
+  background-repeat: no-repeat; 
+  background-size: cover;       
+  background-position: center;
 width: 100vw;
 height: 100vh;
 display:flex;
