@@ -36,27 +36,48 @@ export const Produtoscontainer = styled.div`
         margin-top: 25px;
     }
 
-
+    
+    &.inner-box:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
     }
 
+
+
+
+    }
     .produto1,
     .produto2,
     .produto3 {
         width: 400px;
-        height: 500px;
+        height: 550px;
         background-color: #83583a;
         border-radius: 15px;
         text-align: center;
         display: flex;
-        justify-content: center;
-        align-items: end;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
         position: relative;
 
         & h2 {
-            margin-bottom: 120px;
+            margin-bottom: 125px;
             font-family: 'Lexend', cursive;
             font-size: 60px;
             color: #faf3c4
         }
+
+        & p {
+            cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
+        }
     }
+
+        .doce {
+          width: 100%;
+          height: 350px;
+          border-radius: 15px;
+          object-fit: cover;
+          margin: 0; 
+        }
+
 `;
