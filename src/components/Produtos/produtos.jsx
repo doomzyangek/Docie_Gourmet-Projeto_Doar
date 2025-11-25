@@ -9,21 +9,25 @@ export function Produtos() {
 
         <div className="produtos-grid">
             
-            <div className="produto1">
-                <div className="inner-box"><p>SAIBA MAIS</p></div>
-                <h2>DOCES</h2>
+            <div className="produto1">    
+                <img src="/src/assets/doce.jpeg" alt="brigadeiro" className="doce"/>  
+                    <h2>DOCES</h2>     
+                        <div className="inner-box"><p>SAIBA MAIS</p></div> 
             </div>
 
             <div className="produto2">
-                <div className="inner-box"><p>SAIBA MAIS</p></div>
-                <h2>DONUTS</h2>
+                <img src="/src/assets/donuts.jpeg" alt="donuts" className="doce"/>  
+                    <h2>DONUTS</h2>     
+                        <div className="inner-box"><p>SAIBA MAIS</p></div>
             </div>
 
             <div className="produto3">
-                <div className="inner-box"><p>SAIBA MAIS</p></div>
-                <h2>PIPOCAS</h2>
+                <img src="/src/assets/pipoca.jpeg" alt="pipoca" className="doce"/>
+                    <h2>PIPOCAS</h2>
+                        <div className="inner-box"><p>SAIBA MAIS</p></div>
             </div>
         </div>
+
     </Produtoscontainer>
   );
 }
