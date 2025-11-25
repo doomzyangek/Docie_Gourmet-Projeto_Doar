@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Homecontainer = styled.div`
-  background-image: url('/src/assets/tenda.png'); 
+  background-image: url('/src/assets/parede.png'); 
 
   background-repeat: no-repeat; 
   background-size: cover;       
@@ -23,6 +23,7 @@ export const Homecontainer = styled.div`
       transform: scale(1.03);
       filter: drop-shadow(0 0 0.75rem #D94A6E);
       transition: transform 0.5s ease;
+      cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
     }
   }
   .Logo img{
@@ -33,5 +34,6 @@ export const Homecontainer = styled.div`
       transform: scale(1.03);
       filter: drop-shadow(0 0 0.75rem #D94A6E);
       transition: transform 0.5s ease;
+      cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
     }
   }`;
