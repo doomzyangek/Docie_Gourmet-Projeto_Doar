@@ -36,6 +36,14 @@ export const Produtoscontainer = styled.div`
         margin-top: 25px;
     }
 
+    
+    &.inner-box:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+    }
+
+
+
 
     }
     .produto1,
@@ -61,11 +69,6 @@ export const Produtoscontainer = styled.div`
 
         & p {
             cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
-        }
-
-        &:hover .inner-box {
-            transform: scale(1.05);
-            transition: transform 0.5s ease;
         }
     }
 
