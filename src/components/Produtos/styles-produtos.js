@@ -75,7 +75,7 @@ export const Produtoscontainer = styled.div`
         .doce {
           width: 100%;
           height: 350px;
-          border-radius: 10px;
+          border-radius: 15px;
           object-fit: cover;
           margin: 0; 
         }
