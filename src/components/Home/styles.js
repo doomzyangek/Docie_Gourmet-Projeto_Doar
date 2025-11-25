@@ -23,7 +23,6 @@ export const Homecontainer = styled.div`
       transform: scale(1.03);
       filter: drop-shadow(0 0 0.75rem #D94A6E);
       transition: transform 0.5s ease;
-      cursor: default;
     }
   }
   .Logo img{
