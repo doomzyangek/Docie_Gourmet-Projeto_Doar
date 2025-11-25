@@ -7,7 +7,8 @@ import { createRoot } from 'react-dom/client';
 import { Home } from './components/Home';
 // O React automaticamente procura por './components/Header/index.jsx'
 import { Produtos } from './components/Produtos/produtos.jsx';
-
+import { Footer } from './components/Footer'
+import { Contatos } from './components/Contatos'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,6 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <GlobalStyle />
     <Home />
     <Produtos />
+    <Contatos />
+    <Footer />
     {/* Provavelmente você vai importar uma "página" aqui, como a Home */}
   </React.StrictMode>,
 )
