@@ -1,5 +1,5 @@
 import React from 'react';
-import fundo from '/src/assets/tenda.png';
+import fundo from '/src/assets/parede.png';
 import { Homecontainer } from './styles.js';
 import Logo from '/src/assets/DocieLogo.png';
 
