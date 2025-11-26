@@ -60,7 +60,7 @@ export const Produtoscontainer = styled.div`
         border-radius: 30px;
         margin-bottom: 10px;
         position: absolute;
-
+        transition: transform 0.5s ease;
         & p{
             font-family: 'Lexend', cursive;
             font-size: 40px;
@@ -72,7 +72,6 @@ export const Produtoscontainer = styled.div`
 
         &:hover {
             transform: scale(1.05);
-            transition: transform 0.5s ease;
             cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
         }
     }
