@@ -17,6 +17,7 @@ h1{
     font-size: 50px;
     font-weight: 700;
     margin: 3rem;
+    font-weight: 1000;
 }
 .cards{
     display: flex;
@@ -52,12 +53,16 @@ h1{
     font-size:3rem;
     color: #faf3c4;
     margin-bottom: 1vh;
-    
+    & p{
+        font-weight: 900;
+    }
 }
 .descricao{
     font-size: 2.5rem;
     color: #faf3c4;
-    
+    & p{
+        font-weight: 700;
+    }
 }
 .descricao img{
     width: 2.5rem;

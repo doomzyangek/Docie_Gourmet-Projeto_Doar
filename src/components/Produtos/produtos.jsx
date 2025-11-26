@@ -9,23 +9,59 @@ export function Produtos() {
 
         <div className="produtos-grid">
             
+            {/* --- PRODUTO 1: DOCES --- */}
             <div className="produto">    
-                <img src="/src/assets/doce.jpeg" alt="brigadeiro" className="doce"/>  
-                    <h2>DOCES</h2>     
+                <div className="flip-inner">
+                    
+                    {/* FRENTE DO CARD */}
+                    <div className="flip-front">
+                        <img src="/src/assets/doce.jpeg" alt="brigadeiro" className="doce"/>  
+                        <h2>DOCES</h2>     
                         <div className="inner-box"><p>SAIBA MAIS</p></div> 
+                    </div>
+
+                    {/* VERSO DO CARD (NOVO) */}
+                    <div className="flip-back">
+                        <h3>Detalhes</h3>
+                        <p className="descricao">Brownie com cobertura especial e Oreo.</p>
+                        <p className="preco">R$ 15,00</p>
+                    </div>
+
+                </div>
             </div>
 
+            {/* --- PRODUTO 2: DONUTS --- */}
             <div className="produto">
-                <img src="/src/assets/donuts.jpeg" alt="donuts" className="doce"/>  
-                    <h2>DONUTS</h2>     
+                <div className="flip-inner">
+                    <div className="flip-front">
+                        <img src="/src/assets/donuts.jpeg" alt="donuts" className="doce"/>  
+                        <h2>DONUTS</h2>     
                         <div className="inner-box"><p>SAIBA MAIS</p></div>
+                    </div>
+                    <div className="flip-back">
+                        <h3>Detalhes</h3>
+                        <p className="descricao">Donuts fresquinhos com cobertura de chocolate.</p>
+                        <p className="preco">R$ 12,00</p>
+                    </div>
+                </div>
             </div>
 
+            {/* --- PRODUTO 3: PIPOCAS --- */}
             <div className="produto">
-                <img src="/src/assets/pipoca.jpeg" alt="pipoca" className="doce"/>
-                    <h2>PIPOCAS</h2>
+                <div className="flip-inner">
+                    <div className="flip-front">
+                        <img src="/src/assets/pipoca.jpeg" alt="pipoca" className="doce"/>
+                        <h2>PIPOCAS</h2>
                         <div className="inner-box"><p>SAIBA MAIS</p></div>
+                    </div>
+                    <div className="flip-back">
+                        <h3>Detalhes</h3>
+                        <p className="descricao">Pipoca gourmet de leite ninho.</p>
+                        <p className="preco">R$ 10,00</p>
+                    </div>
+                </div>
             </div>
+
         </div>
 
     </Produtoscontainer>
