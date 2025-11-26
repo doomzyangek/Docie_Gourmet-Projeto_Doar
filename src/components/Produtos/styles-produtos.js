@@ -1,15 +1,22 @@
 import styled from 'styled-components';
 
 export const Produtoscontainer = styled.div`
-    background-color: #fff;
+
+    /* Fundo que estava nas mudanças stashed */
+    background-image: url('/src/assets/parede_papel.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover;       
+    background-position: center;
+
+    /* Configurações gerais que estavam no "Updated upstream" */
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    .produto{
+
+    .produto {
         width: 400px;
         height: 550px;
         background-color: #83583a;
@@ -25,7 +32,7 @@ export const Produtoscontainer = styled.div`
             margin-bottom: 125px;
             font-family: 'Lexend', cursive;
             font-size: 60px;
-            color: #faf3c4
+            color: #faf3c4;
         }
     }
 
@@ -35,6 +42,7 @@ export const Produtoscontainer = styled.div`
         font-size: 60px;
         color: #D94A6E;
         text-align: center;
+        margin-top: 50px;
     }
 
     .produtos-grid {
@@ -60,19 +68,14 @@ export const Produtoscontainer = styled.div`
             text-align: center;
             margin-top: 25px;
             cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
-        
         }
 
-    
         &:hover {
             transform: scale(1.05);
             transition: transform 0.5s ease;
             cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
-    
         }
     }
-    
-        
 
     .doce {
         width: 100%;
