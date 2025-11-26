@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Produtoscontainer = styled.div`
 
-    /* Fundo */
-    background-image: url('/src/assets/parede_papel.png'); 
+    /* Fundo que estava nas mudanças stashed */
+    background-image: url('/src/assets/fundo.png'); 
     background-repeat: no-repeat; 
     background-size: cover;       
     background-position: center;

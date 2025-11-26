@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContatosContainer = styled.div`
-  background-image: url('/src/assets/fundo.png'); 
+  background-image: url('/src/assets/parede_papel.png'); 
 
   background-repeat: no-repeat; 
   background-size: cover;       

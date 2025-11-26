@@ -9,12 +9,13 @@ import { Home } from './components/Home';
 import { Produtos } from './components/Produtos/produtos.jsx';
 import { Footer } from './components/Footer'
 import { Contatos } from './components/Contatos'
-
+import { Sobre } from './components/Sobre/sobre.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GlobalStyle />
     <Home />
+    <Sobre />
     <Produtos />
     <Contatos />
     <Footer />
