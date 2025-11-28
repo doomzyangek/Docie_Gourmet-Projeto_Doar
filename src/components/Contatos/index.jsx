@@ -8,7 +8,9 @@ import insta from '/src/assets/instagram-brands-solid-full.svg';
 export function Contatos() {
   return (
     <ContatosContainer>
+      <div className='titulo_secao'>
       <h1>CONTATOS</h1>
+      </div>
       <div className='cards'>
         <div className='card'>
           <div className='icone'>

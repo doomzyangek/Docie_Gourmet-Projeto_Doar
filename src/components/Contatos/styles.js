@@ -11,20 +11,20 @@ height: 100vh;
 display:flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 
-h1{
+.titulo_secao h1{
     color: #D94A6E;
     font-size: 50px;
-    font-weight: 700;
-    margin: 3rem;
     font-weight: 1000;
+    margin-bottom: 2rem;
 }
 .cards{
     display: flex;
     justify-content:space-around;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    margin-top: 2rem;
 }
 .card{
     background-color: #83583a;

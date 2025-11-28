@@ -9,7 +9,8 @@ export const Produtoscontainer = styled.div`
     background-position: center;
 
     /* Configurações gerais */
-    height: 100vh;
+    min-height: 100vh; 
+    height: auto;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -28,11 +29,21 @@ export const Produtoscontainer = styled.div`
     .produtos-grid {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 40px;
-        margin-top: 50px;
-    }
+        
+        /* MUDANÇA 2: Permitir quebra de linha */
+        flex-wrap: wrap; 
+        
+        /* MUDANÇA 3: Centralizar os itens na linha de baixo */
+        justify-content: center; 
+        
+       gap: 1rem;
+       margin: 4rem;
 
+        /* MUDANÇA 4: Travar a largura máxima */
+        /* 400px (card) * 3 + 80px (gaps) = 1280px. 
+           Colocamos 1300px para garantir que caibam 3, mas o 4º caia. */
+        max-width: 70vw; 
+    }
     /* --- INÍCIO DA LÓGICA 3D --- */
 
     /* 1. O Container (Cena) */
@@ -41,7 +52,9 @@ export const Produtoscontainer = styled.div`
         height: 550px;
         background-color: transparent; /* O fundo agora vai nas faces */
         perspective: 1000px; /* Dá a profundidade 3D */
-        cursor: pointer;
+        cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
+
+
     }
 
     /* 2. O Container Interno (Quem gira) */
@@ -57,6 +70,8 @@ export const Produtoscontainer = styled.div`
     /* O Gatilho do Hover: Gira o inner quando passa o mouse no container */
     .produto:hover .flip-inner {
         transform: rotateY(180deg);
+        cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
+
     }
 
     /* 3. Estilos Comuns para Frente e Verso */
@@ -67,6 +82,7 @@ export const Produtoscontainer = styled.div`
         -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden; /* Esconde as costas */
         border-radius: 15px;
+        cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
         
         /* Flexbox para alinhar conteúdo interno */
         display: flex;
@@ -78,11 +94,11 @@ export const Produtoscontainer = styled.div`
     .flip-front {
         background-color: #83583a;
         justify-content: flex-end; /* Mantém seu layout original */
-        
+        cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
         & h2 {
             margin-bottom: 125px;
             font-family: 'Lexend', cursive;
-            font-size: 60px;
+            font-size: 3rem;
             color: #faf3c4;
             font-weight: 900;
             
@@ -97,7 +113,7 @@ export const Produtoscontainer = styled.div`
         justify-content: center;
         gap: 20px;
         border: 2px solid #faf3c4; /* Uma borda para diferenciar, opcional */
-
+        cursor: url('/src/assets/rosquinha_mordida.png') 16 16, auto;
         & h3 {
             font-family: 'Lexend', cursive;
             font-size: 40px;
@@ -153,5 +169,6 @@ export const Produtoscontainer = styled.div`
         margin: 0; 
         position: absolute; /* Fixa a imagem no topo */
         top: 0;
+        margin-bottom: 10px;
     }
 `;
